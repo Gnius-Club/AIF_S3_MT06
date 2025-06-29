@@ -38,10 +38,11 @@
                 <li><a href="#activity-2">2</a></li>
                 <li><a href="#activity-3">3</a></li>
                 <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
 
             <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>💡 Esta misión introduce la integración de sensores profesionales y la visualización de datos en la nube.</p>
                 <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
             </div>
         </aside>
@@ -70,20 +71,22 @@
                                 <td>
                                     <strong>Objetivos:</strong>
                                     <ul>
-                                        <li>Que los estudiantes integren un sensor BME280 para leer temperatura, humedad y presión.</li>
-                                        <li>Que utilicen Vibe Coding para generar un script que publique estos datos en múltiples 'topics' en SmartIOT.space.</li>
-                                        <li>Que visualicen los datos en gráficos y comprendan cómo la visualización es el primer paso para la detección de patrones y el forecasting con IA.</li>
+                                        <li>Que los estudiantes integren un sensor BME280 en su sistema IoT.</li>
+                                        <li>Que utilicen Vibe Coding para generar un script que lea múltiples valores (temperatura, humedad, presión) y los publique en la nube.</li>
+                                        <li>Que visualicen estos datos en gráficos y conceptualicen cómo esto permite la detección de patrones y el forecasting con IA.</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
-                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis de sensores avanzados y la conexión entre visualización de datos y predicción por IA.</li>
-                                        <li><strong class="tactic-highlight">⚡BRAIN SPARK (VIBE CODING):</strong> Diseño e implementación de un sistema de monitoreo ambiental continuo.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Análisis de los datos visualizados y reflexión sobre aplicaciones del mundo real.</li>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un sistema IoT funcional que lee datos del sensor BME280 y los publica de forma continua en SmartIOT.space.</li>
-                                        <li>Gráficos de línea en el dashboard de SmartIOT mostrando las tendencias de temperatura, humedad y presión a lo largo del tiempo.</li>
+                                        <li>Un script funcional en MicroPython que lee datos del sensor BME280 y los publica de forma continua en tres 'topics' diferentes en SmartIOT.space.</li>
+                                        <li>Un dashboard en SmartIOT.space con gráficos de línea que visualizan en tiempo real los datos de temperatura, humedad y presión.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -93,20 +96,21 @@
                                         <li>Conexión a internet estable (Wi-Fi).</li>
                                         <li>Acceso a MakeCode y SmartIOT.space.</li>
                                         <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-8).</li>
-                                        <li>Por equipo de 2: 1 Micro:bit v2 con placa IOTbit, 1 sensor BME280, y cables de conexión.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2.</li>
+                                        <li>1 Sensor ambiental BME280 con cable I2C por equipo.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión:</strong>
                                     <ol>
                                         <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
                                             <ul>
-                                                <li>Confirmar que los sensores BME280 están disponibles y funcionales.</li>
-                                                <li>Asegurarse de que los estudiantes tengan configurados los 'feeds' o 'topics' necesarios en SmartIOT.space (temperatura, humedad, presion).</li>
-                                                <li>Probar el ciclo completo: conectar el sensor, ejecutar el código y ver los datos en el dashboard.</li>
+                                                <li>Asegurar que la librería `bme280` esté disponible o sea fácil de añadir en MakeCode.</li>
+                                                <li>Verificar que todos los sensores BME280 y cables I2C estén en buen estado.</li>
+                                                <li>Tener pre-configurados los 'topics' (temperatura, humedad, presion) en una cuenta de SmartIOT.space de ejemplo.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar la comunicación I2C y la librería `bme280`. Estar preparado para discutir la detección de patrones y el forecasting a un nivel conceptual.</li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un sistema de monitoreo funcional y un dashboard con datos ya graficados para mostrar como ejemplo claro del objetivo final.</li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el concepto de comunicación I2C y los errores comunes (`OSError: 110`). Estar preparado para guiar la conversación sobre detección de patrones y forecasting.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un proyecto 100% funcional que ya esté enviando datos del BME280 a un dashboard de SmartIOT, con algunos datos históricos para poder mostrar un patrón simple.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -118,29 +122,29 @@
 
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono de la sesión, activar la IA y presentar la integración de sensores profesionales.</p>
+                <p>Establecer el tono de la sesión, activar la IA y presentar la integración de sensores reales.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto de la Misión</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida e introduce el concepto de dar "sentidos" al sistema IoT.</p>
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Buenos días, desarrolladores. La sesión pasada logramos enviar un dato estático a la nube. Hoy, le daremos a nuestro sistema sentidos reales. Vamos a integrar un sensor ambiental de grado profesional, el BME280, capaz de medir múltiples aspectos de nuestro entorno. Nuestra misión es capturar el 'pulso' del ambiente y visualizarlo en tiempo real.</p>
+                                <p class="dialogue assistant">Buenos días, ingenieros. La sesión pasada logramos enviar un dato estático a la nube. Hoy, le daremos a nuestro sistema sentidos reales. Vamos a integrar un sensor ambiental de grado profesional, el BME280, capaz de medir múltiples aspectos de nuestro entorno. Nuestra misión es capturar el 'pulso' del ambiente y visualizarlo en tiempo real.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual con Xolo.</p>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Inicien su sesión con Xolo como siempre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo, soy Javier, mi perfil es Científico, y me interesa el análisis de datos climáticos. Listo para la Misión 6.'</strong></p>
+                                <p class="dialogue assistant">Por favor, inicien su sesión con Xolo, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy David, mi perfil es Científico, y me interesa el análisis de datos climáticos.'</strong> Esto permitirá a Xolo contextualizar la importancia de la misión de hoy. Procedan.</p>
                             </div>
                         </div>
                     </div>
@@ -148,42 +152,18 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: A.I. GYM (Sensores y Análisis de Patrones) ⏰ 12 minutos</h2>
-                <p>Construir el andamiaje conceptual sobre sensores avanzados y la conexión entre visualización de datos y predicción por IA.</p>
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 3 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en la recolección y visualización de datos de sensores.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Investigación sobre el Sensor BME280</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador dirige a los alumnos para que investiguen el sensor del día.</p>
+                            <h3>Paso 1: "I Can Statement" de Monitoreo</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Su primera tarea de investigación con Xolo es doble. Primero, de forma individual, pídanle a Xolo que les explique qué mide exactamente el sensor BME280 y en qué aplicaciones del mundo real se utiliza. Esto les dará contexto sobre la herramienta que van a usar.</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Conexión entre Visualización e IA</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador guía la siguiente consulta, enfocada en la detección de patrones.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, la parte más importante. Pídanle a Xolo que les explique cómo la visualización de datos en un gráfico de línea nos permite detectar patrones, y cómo esto se conecta con la predicción por IA. Usen este prompt: <strong>'Xolo, explica cómo un simple gráfico de línea se relaciona con la capacidad de la IA para predecir el futuro, como el clima.'</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Supervisión y Guía del Facilitador</h3>
-                            <p>El facilitador circula para asegurar la comprensión y fomentar preguntas de profundización.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Mientras circula) "Entendido el concepto de forecasting. Ahora pregunten a Xolo: <strong>'¿Qué es una 'anomalía' en un gráfico de datos y cómo una IA podría aprender a detectarla?'</strong> O, <strong>'¿Qué significa 'correlación' entre dos gráficos, como temperatura y humedad, y por qué es importante para la IA?'</strong> El objetivo es empezar a pensar como científicos de datos."</p>
+                                <p class="dialogue assistant">La meta de hoy es crear un sistema de monitoreo completo. Al finalizar, podrán afirmar: <strong>'Yo puedo integrar un sensor BME280 a mi sistema, enviar sus datos a la nube y visualizarlos en un gráfico para detectar patrones.'</strong></p>
                             </div>
                         </div>
                     </div>
@@ -191,42 +171,30 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                 <h2>⚡ Actividad 3: Brain Spark (Monitoreo Continuo) ⏰ 20 minutos</h2>
-                <p>Los estudiantes diseñan, implementan y depuran un sistema de monitoreo ambiental en parejas.</p>
+                <h2>⚡ Actividad 3: A.I. GYM (Sensores y Patrones) ⏰ 12 minutos</h2>
+                <p>Facilitar una sesión de aprendizaje sobre sensores avanzados y la conexión entre visualización de datos e IA.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
-                             <p>(Proyectar Diapositiva 5) El facilitador presenta el desafío práctico y guía la formación de equipos.</p>
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4 y 5) El facilitador dirige a los alumnos para que aprendan sobre el sensor y la detección de patrones con Xolo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, a la acción. Formen sus equipos de dos. Su 'vibe' es construir un sistema de monitoreo ambiental continuo. Deben leer los tres valores del sensor BME280 periódicamente y enviar cada dato a un 'topic' separado en su cuenta de SmartIOT.</p>
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. Su aprendizaje con Xolo hoy es doble. Primero, pregunten: <strong>'Xolo, detalla qué es el sensor BME280 y dónde se usa en el mundo real.'</strong> Una vez que entiendan el hardware, pasen al concepto clave: <strong>'Ahora, explica cómo un simple gráfico de línea se relaciona con la capacidad de la IA para predecir el futuro, como el clima.'</strong></p>
                             </div>
                         </div>
                     </div>
-                    <div class="step-card">
+                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
-                            <p>(Proyectar Diapositiva 6) Las parejas definen su 'vibe' y colaboran con Xolo para obtener el código.</p>
+                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
+                            <p>El facilitador circula, refuerza conceptos y sugiere preguntas de profundización.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">Describan esta 'vibe' a Xolo. Sean específicos sobre los nombres de los topics y el intervalo de tiempo. Por ejemplo: <strong>'Xolo, nuestra vibe es: leer el BME280 cada 15 segundos. Publicar la temperatura en el topic `temperatura`, la humedad en `humedad`, y la presión en `presion`.'</strong> Xolo generará el código asumiendo que ya tienen la parte de conexión lista.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación y Depuración de Sensores</h3>
-                             <p>(Proyectar Diapositiva 7) Las parejas implementan el código y aprenden a depurar problemas de hardware I2C.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Implementen este código. Conecten su sensor BME280. Su principal desafío podría ser la conexión física. Si el programa se detiene con un error al intentar inicializar el sensor, como un `OSError`, es casi seguro un problema de comunicación. Descríbanlo a Xolo. Por ejemplo: <strong>'Xolo, tenemos un OSError al inicializar el BME280.'</strong> Él les guiará a través del protocolo de depuración I2C: verificar cableado, conexiones y, como último recurso, el sensor mismo."</p>
+                                <p class="dialogue assistant">(Mientras circula) "La explicación de Xolo sobre forecasting es fundamental. Para asegurar que la entienden, pregúntenle: <strong>'Xolo, ¿qué significa que la IA aprende la 'correlación' entre los datos? ¿Puedes darme un ejemplo simple?'</strong> O también: <strong>'¿Por qué necesitamos 'grandes cantidades' de datos históricos para entrenar un modelo de predicción?'</strong> El objetivo es que conecten la recolección de datos de hoy con las necesidades de la IA del mañana."</p>
                             </div>
                         </div>
                     </div>
@@ -234,30 +202,85 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Gnius STORM (Análisis de Datos) ⏰ 5 minutos</h2>
-                <p>El facilitador modera una reflexión final enfocada en la visualización y aplicación de los datos recolectados.</p>
+                 <h2>⚡ Actividad 4: Brain Spark (Monitoreo Continuo) ⏰ 20 minutos</h2>
+                <p>Los estudiantes aplican sus conocimientos para construir un sistema de telemetría multi-canal en parejas.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
-                            <p>(Proyectar Diapositiva 8) Los alumnos observan sus gráficos y reflexionan individualmente.</p>
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de monitoreo y da la instrucción de formar parejas.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Para cerrar, vamos a nuestro Think-Pair-Share. Abran su dashboard de SmartIOT y observen sus gráficos. Primero, un minuto para que cada uno piense: ¿qué patrón predicen que verán si dejan el sensor funcionando durante toda la clase o incluso todo el día?</p>
+                                <p class="dialogue assistant">Ahora, a la acción. Formen sus parejas. Su desafío es construir un sistema de monitoreo ambiental continuo. Van a conectar el sensor BME280, leer sus tres valores, y enviarlos a la nube periódicamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas comunican su 'vibe' a Xolo para generar el código de monitoreo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Describan su 'vibe' a Xolo. Debe ser clara y específica. Por ejemplo: <strong>'Xolo, nuestra vibe es: leer continuamente el BME280. Queremos publicar la temperatura en el topic "temperatura", la humedad en el topic "humedad", y la presión en el topic "presion". El ciclo debe repetirse cada 15 segundos.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Análisis y "Taming the Genie"</h3>
+                             <p>(Proyectar Diapositiva 8) Las parejas analizan el código, identificando la inicialización y lectura del sensor.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Una vez que tengan el código, analícenlo. Su tarea es fusionarlo con el código de conexión de la misión anterior. Identifiquen las nuevas líneas clave: ¿dónde se inicializa el sensor? ¿Cómo se leen sus propiedades como `bme.temperature()`? ¿Y por qué el `time.sleep(15)` es crucial para un monitoreo sostenible?</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Implementación y Depuración de Hardware</h3>
+                             <p>(Proyectar Diapositiva 9) Las parejas implementan el sistema y aprenden a depurar problemas de comunicación I2C.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Ahora, conecten el sensor y ejecuten el código. Su principal desafío podría ser la conexión física. Si el programa se detiene con un error como `OSError: ETIMEDOUT`, es un problema de comunicación con el sensor. Descríbanlo a Xolo. Él los guiará por el protocolo de depuración I2C: verificar cableado, conexiones y, como último recurso, el propio sensor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en la visualización de datos y sus aplicaciones.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual basada en la visualización de datos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, miren los gráficos que se están generando en su dashboard de SmartIOT. Individualmente, tómense un minuto para pensar: ¿qué patrón predicen que verán en el gráfico de temperatura si dejaran esto funcionando por 24 horas?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
-                            <p>Los alumnos discuten en parejas una aplicación real para su sistema.</p>
+                            <p>Los alumnos discuten aplicaciones reales para su sistema de monitoreo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, en parejas, discutan una aplicación real para este sistema de monitoreo. ¿Cómo podría este dispositivo ayudar a su escuela, a su hogar o a su comunidad? Sean específicos. Tienen dos minutos.</p>
+                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos una aplicación real para este sistema de monitoreo. Olviden las limitaciones, piensen en grande: ¿cómo podría este sistema ayudar a su escuela, a su casa o a su comunidad? ¿Qué problema resolvería?</p>
                             </div>
                         </div>
                     </div>
@@ -269,7 +292,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Escuchemos de algunas parejas. ¿Qué aplicación idearon? ¿Qué decisiones podrían tomar basándose en los datos que están recolectando? (Escuchar 2-3 respuestas). Excelente. Han creado un sistema que no solo está conectado, sino que es consciente de su entorno. Están transmitiendo datos valiosos que pueden ser analizados. Han dado el primer paso para convertirse en científicos de datos. En la próxima sesión, usaremos esta misma conciencia ambiental para que su dispositivo tome acciones por sí mismo, cerrando el bucle de control.</p>
+                                <p class="dialogue assistant">Escuchemos las aplicaciones que idearon. (Escuchar 2-3 respuestas). Fantástico. Han creado un sistema que no solo está conectado, sino que es consciente de su entorno. Están transmitiendo datos valiosos que pueden ser analizados. Han dado el primer paso para convertirse en científicos de datos. En la próxima sesión, usaremos esta misma conciencia ambiental para que su dispositivo tome acciones por sí mismo, cerrando el bucle de control.</p>
                             </div>
                         </div>
                     </div>
